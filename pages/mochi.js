@@ -2,10 +2,10 @@ import Link from "next/link";
 import Unity, { UnityContext } from "react-unity-webgl";
 
 const unityContext = new UnityContext({
-  loaderUrl: "/mmp/mmp.loader.js",
-  dataUrl: "/mmp/mmp.data",
-  frameworkUrl: "/mmp/mmp.framework.js",
-  codeUrl: "/mmp/mmp.wasm",
+  loaderUrl: "/mmp/Build.loader.js",
+  dataUrl: "/mmp/Build.data",
+  frameworkUrl: "/mmp/Build.framework.js",
+  codeUrl: "/mmp/Build.wasm",
 });
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <Unity
         unityContext={unityContext}
         style={{
-          height: 288,
-          width: 512,
+          width: "100%",
+          height: "100%",
           border: "none",
           margin: "auto",
         }}
