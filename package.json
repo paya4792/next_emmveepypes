@@ -9,8 +9,7 @@
     "format": "prettier --write ./src && yarn eslint --fix ./src ",
     "lint": "next lint",
     "fix": "yarn format && yarn lint",
-    "lint-staged": "yarn fix",
-    "prepare": "husky install"
+    "lint-staged": "yarn fix"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.25",
